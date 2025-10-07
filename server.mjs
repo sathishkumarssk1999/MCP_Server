@@ -45,6 +45,8 @@ server.start({
     port: process.env.PORT || 10000,
     path: "/mcp",
     stateless: false,
+    host: "0.0.0.0",  // Bind to all interfaces (important for Render to expose the port)
+
   },
 });
 
